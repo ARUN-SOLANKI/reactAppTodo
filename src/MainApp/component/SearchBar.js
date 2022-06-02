@@ -1,11 +1,18 @@
 import { Button, IconButton, TextField } from "@mui/material";
 import { Search } from "@mui/icons-material";
-import React from "react";
+import React, { useContext } from "react";
+import { MyContext } from "../contextApi/MyContextApi";
 
 function SearchBar() {
+  const { handleSearch } = useContext(MyContext);
   return (
     <div className="SearchBar-Container">
-      <input type="text" placeholder="serach items" className="SearchInput" />
+      <input
+        type="text"
+        placeholder="serach items"
+        className="SearchInput"
+        onChange={handleSearch}
+      />
       <IconButton>
         <Search />
       </IconButton>

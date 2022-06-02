@@ -7,6 +7,8 @@ function MyContextApi({ children }) {
   const [title, setTitle] = useState("");
   const [imgInfo, setImgInfo] = useState("");
   const [addContent, setAddContent] = useState([]);
+  const [searchContent, setSearchContent] = useState([]);
+  const [searchText, setSearchText] = useState("");
 
   const handleOpen = () => {
     setOpen(true);
@@ -51,6 +53,16 @@ function MyContextApi({ children }) {
     setAddContent(newArr);
   };
 
+  const handleSearch = (e) => {
+    setSearchText(e.target.value);
+    const newArr = addContent.filter((item) => {
+      if (item.title.includes(e.target.value)) {
+        return item;
+      }
+    });
+    setSearchContent(newArr);
+  };
+
   return (
     <MyContext.Provider
       value={{
@@ -64,6 +76,9 @@ function MyContextApi({ children }) {
         addTask: addTask,
         handleTitle: handleTitle,
         handleCheck: handleCheck,
+        handleSearch: handleSearch,
+        searchText: searchText,
+        searchContent: searchContent,
       }}
     >
       {children}
