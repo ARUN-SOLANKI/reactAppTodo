@@ -1,0 +1,82 @@
+/*--------------- Root Config start--------------------------- */
+* {
+  font-size: 10px;
+  padding: 0px;
+  margin: 0px;
+}
+/*--------------- Root Config end--------------------------- */
+
+/*--------------- home start--------------------------- */
+
+.HomeContainer {
+  max-width: 80rem;
+  min-width: 40rem;
+  margin: auto;
+  padding: 3rem 1rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+  margin-top: 3rem;
+}
+.ListContainer {
+  margin-top: 1rem;
+}
+.AddBtn {
+  width: 100%;
+  background-color: #0a95ff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+/*--------------- home end--------------------------- */
+
+/*--------------- SearchBar start--------------------------- */
+.SearchBar-Container {
+  display: flex;
+  justify-content: space-between;
+  border: 0.1rem solid #ccc;
+  padding: 0rem 1rem;
+  border-radius: 0.5rem;
+}
+.SearchInput {
+  border: none;
+  height: 4rem;
+  width: 95%;
+}
+
+.SearchInput:focus {
+  outline: none;
+}
+
+/*--------------- SearchBar End--------------------------- */
+
+/*--------------- List start--------------------------- */
+.InnerListContainer {
+  display: flex;
+}
+
+.ListAvtar {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+}
+
+.ListContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.ListTitle {
+  font-size: 1.6rem;
+  width: 80%;
+  /* background-color: #0a95ff; */
+}
+.checkBoxBtn {
+  background-color: #0a95ff;
+}
+/*--------------- List End--------------------------- */
