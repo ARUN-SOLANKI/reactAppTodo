@@ -9,7 +9,6 @@ import SearchBar from "../component/SearchBar";
 function Home() {
   const { addContent, handleOpen, searchText, searchContent } =
     useContext(MyContext);
-
   return (
     <Box className="HomeContainer">
       <SearchBar />

@@ -67,7 +67,8 @@ function MyModal() {
                   color: "green",
                 }}
               >
-                <p>{imgInfo.name}</p> <Check size={15} />
+                <p style={{ overflow: "hidden" }}>{imgInfo.name}</p>{" "}
+                <Check size={15} />
               </Button>
             )}
           </div>
